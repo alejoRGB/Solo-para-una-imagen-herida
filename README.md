@@ -6,3 +6,7 @@ Cuando la escultura es tocada reproduce unos sonidos por unos parlantes que esta
 
 La solución técnica para el funcionamiento se divide en 2 partes. Por un lado esta el sensor que es un sensor capacitivo, que envía 
 señales electronicas cuando detecta el tácto de una persona envía una señal 
+
+Link server: https://drive.google.com/file/d/1eXvFFY03ChPnQHWmixiWRVksmJXMQVWD/view
+
+
