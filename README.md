@@ -1,3 +1,7 @@
+Solo para una Imagen Herida
+
+
+
 Este es el repositorio de la parte electronica de la obra "Solo para una Imagen Herida" de Lucía Ranzuglia, 
 la cual yo ayude con el desarrollo técnico y práctico. "Solo para una Imagen Herida" es una instalación interactiva
 que consiste en una escultura hecha con tubos de hierro que reaccionan al tacto.
