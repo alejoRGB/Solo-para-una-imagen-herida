@@ -3,14 +3,14 @@
 
 <p float="center">
    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
   <img src="https://github.com/alejoRGB/Solo-para-una-imagen-herida/blob/main/1T8A1022.JPG" width="400"/>
 </p>
 <p float="center">
 <img src="https://github.com/alejoRGB/Solo-para-una-imagen-herida/blob/main/WhatsApp%20Image%202024-01-29%20at%2009.54.31.jpeg" width="250" />
-   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/alejoRGB/Solo-para-una-imagen-herida/blob/main/1T8A1033.JPG" width="250" /> 
- &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/alejoRGB/Solo-para-una-imagen-herida/blob/main/WhatsApp%20Image%202024-01-29%20at%2022.49.53.jpeg" width="250" /> 
  
   
@@ -51,6 +51,30 @@ obra. En ese momento el arduino envía mediante comunicación [Serial](https://e
 que le especificamos, lo cual activa los sonidos
 
 ### Reprodución de Sonidos.
+
+En la carpeta incluida en este repositorio se encuentran todos los archivos necesarios para reproducir los sonidos.
+Para iniciar este paso es necesario que tengamos ya conectado nuestro arduino o ESP32 y que este seteado el mismo puerto serial
+que esta indicado en el archivo src/App.js. Más adelante daremos más detalles de la configuración que se puede hacer en este archivo. 
+
+
+<img src="https://github.com/alejoRGB/Solo-para-una-imagen-herida/blob/main/server_manu.PNG" width="500" />
+
+
+Primero hay que abrir una terminal, o powershell, en la direccion donde tengamos la carpeta descargada. 
+Luego hay que ejecutar 2 comandos: 
+
+```
+npm run server
+
+```
+Este comando inicializa el servidor.
+
+```
+npm run start
+
+```
+Este comando nos abre un navegador en la dirección localhost:3000 la cual se encarga de recibir los comandos 
+que llegan por el puerto serial que tengamos seteado y reproduce los sonidos.
 
 Link server: https://drive.google.com/file/d/1eXvFFY03ChPnQHWmixiWRVksmJXMQVWD/view
 
