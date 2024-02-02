@@ -76,6 +76,51 @@ npm run start
 Este comando nos abre un navegador en la dirección localhost:3000 la cual se encarga de recibir los comandos 
 que llegan por el puerto serial que tengamos seteado y reproduce los sonidos.
 
+En el archivo "src/App.js" se encuentran los valores que indican que sonidos y de que forma se reproducen al llegarles las señales del
+sensor capacitivo. 
+
+Los archivos de audio estan cargados en la carpeta "sonidos" e importados de la siguiente manera:
+```
+const SONIDOS_TRIGGEREABLES = [
+	"/sonidos/NOISE_AGUDO.wav",
+	"/sonidos/NOISE_GRAVE.wav",
+	"/sonidos/LOOPS_VOCES.wav",
+	"/sonidos/LOOP_VOCES.wav",
+	"/sonidos/PERSONA_HABLANDO_EN_INGLES.wav",
+	"/sonidos/GLITCH.wav",
+	"/sonidos/TELE_Y_NOISE.wav",
+	"/sonidos/MUSICA_GLITCH.wav",
+	"/sonidos/GRITOS.wav",
+	"/sonidos/RUIDO_FINITO.wav",
+	"/sonidos/RUIDO_CLARO.wav",
+];
+
+```
+
+La variable "ATTACK_CAPAS_DE_SONIDO" indica los milisegundos que tarda el programa en reproducir un audio desde que recibe la señal. Un valor más bajo
+indica que es más inmediata la reproducción desde que recibe la señal. "RELEASE_CAPAS_DE_SONIDO" indica cuanto tardan los sonidos en dejar de sonar una vez que
+el espectador deja de tocar la escultura, es decir cuando el sensor deja de envíar señales. 
+```
+const ATTACK_CAPAS_DE_SONIDO = 150;
+const RELEASE_CAPAS_DE_SONIDO = 5000;
+
+```
+
+Los sonidos tienen un efecto de "overlaping" es decir que se reproduce más de una vez los sonidos, sin esperar a que el primero termine de sonar.
+Este efecto genera una sensación de "capas" de sonido" que se van agregando una encima de la otra, mezclando los sonidos. Las variables que afectan este
+efecto se encuentran con el prefijo "PHASER". 
+
+```
+const PHASER = 0.7;
+const PHASER_FREQ = 0;
+const PHASER_BASE_FREQ = 100;
+const PHASER_OCTAVAS = 1;
+
+```
+
+
+
+
 Link server: https://drive.google.com/file/d/1eXvFFY03ChPnQHWmixiWRVksmJXMQVWD/view
 
 
