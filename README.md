@@ -120,7 +120,3 @@ const PHASER_OCTAVAS = 1;
 
 
 
-
-Link server: https://drive.google.com/file/d/1eXvFFY03ChPnQHWmixiWRVksmJXMQVWD/view
-
-
